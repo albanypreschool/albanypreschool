@@ -1,0 +1,15 @@
+name: Noe Valley Nursery School
+description: Web Developer from Somewhere
+markdown: kramdown
+exclude:
+    - node_modules
+    - package.json
+    - CNAME
+    - Gemfile
+    - Gemfile.lock
+    - README.md
+plugins:
+    - jekyll-sitemap
+sass:
+    style: compressed
+    sass_dir: _assets/scss

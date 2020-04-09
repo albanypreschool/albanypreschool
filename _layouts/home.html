@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="nvnsApp">
+
+    {% include head.html %}
+
+    <body ng-controller="HomeCtrl" ng-init="init()" class="home">
+
+        <div
+            ng-class="{
+                'scrolled': vars.scrolled
+            }"
+            id="main"
+            class="container">
+
+            <header>
+
+                {% include nav_global.html %}
+
+            </header>
+
+            <div id="content">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        {{ content }}
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p><em>Noe Valley Nursery School welcomes all children and their families regardless of their race, religion, sexual orientation, gender identity, national, or ethnic origin. We do not discriminate in our program and admission policies, scholarships, or other activities. </em></p>
+                    </div>
+                     <div class="col-md-12">
+                        <span
+                            data-ng-include
+                            src="'/dist/html/home/video_controls.html'">
+                        </span>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div
+                ng-class="{
+                    'ready': vars.video_ready
+                }"
+                class="fullscreen-bg">
+                <div
+                    id="home-hero-video"
+                    class="fullscreen-bg-video">
+                </div>
+            </div>
+            <div id="home-hero-video-screen" class="fullscreen-bg-video-overlay"></div>
+
+        </div>
+
+        {% include javascript.html %}
+
+    </body>
+
+</html>

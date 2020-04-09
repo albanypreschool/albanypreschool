@@ -1,0 +1,25 @@
+{
+  "name": "nvns2017",
+  "version": "1.0.0",
+  "description": "Website for the Noe Valley Nursery School",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git@buzz.github.com:buzzyapyear/nvns.github.io.git"
+  },
+  "author": "Christopher Yap",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.7.9",
+    "bootstrap": "~3.4.1",
+    "font-awesome": "~4.7.0",
+    "jquery": "^3.4.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "~2.6.1",
+    "gulp-sourcemaps": "~2.4.1",
+    "gulp-uglify": "~2.0.1",
+    "gulp-util": "~3.0.8"
+  }
+}
